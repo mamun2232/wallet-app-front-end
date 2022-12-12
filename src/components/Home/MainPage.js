@@ -76,7 +76,7 @@ const MainPage = () => {
 
         <div className="mt-4 flex justify-between">
           <div>
-            <div onClick={()=>navigate("/scan")} className=" w-16 h-16 bg-slate-900 rounded-full flex justify-center items-center">
+            <div onClick={()=>navigate("/scanQr")} className=" w-16 h-16 bg-slate-900 rounded-full flex justify-center items-center">
               <span className="text-3xl text-blue-200">
                 <AiOutlineScan />
               </span>

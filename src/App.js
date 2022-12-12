@@ -6,6 +6,9 @@ import Registion from "./components/Authenticaton/Registion";
 import ComplectProfile from "./components/Authenticaton/ComplectProfile";
 import Home from "./components/Home/Home";
 import Scan from "./components/Home/Scan";
+import ScanQrCode from "./components/Home/ScanQrCode";
+import Payment from "./components/Home/Payment";
+import PaymentSuccess from "./components/Home/PaymentSuccess";
 
 function App() {
   return (
@@ -15,7 +18,10 @@ function App() {
         <Route path="/register" element={<Registion />}></Route>
         <Route path="/complectProfile" element={<ComplectProfile />}></Route>
         <Route path="/home" element={<Home />}></Route>
-        <Route path="/scan" element={<Scan />}></Route>
+        <Route path="/loyaltyCard" element={<Scan />}></Route>
+        <Route path="/scanQr" element={<ScanQrCode/>}></Route>
+        <Route path="/payment" element={<Payment/>}></Route>
+        <Route path="/PaymentSuccess" element={<PaymentSuccess/>}></Route>
       </Routes>
     </div>
   );

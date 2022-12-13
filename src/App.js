@@ -11,6 +11,8 @@ import Payment from "./components/Home/Payment";
 import PaymentSuccess from "./components/Home/PaymentSuccess";
 import Challange from "./components/DailyChallange/Challange";
 import Profile from "./components/Profile/Profile";
+import Status from "./components/Profile/Status";
+import Achevment from "./components/Profile/Achevment";
 
 function App() {
   return (
@@ -25,7 +27,10 @@ function App() {
         <Route path="/payment" element={<Payment/>}></Route>
         <Route path="/PaymentSuccess" element={<PaymentSuccess/>}></Route>
         <Route path="/challange" element={<Challange/>}></Route>
-        <Route path="/profile" element={<Profile/>}></Route>
+        <Route path="/profile" element={<Profile/>}>
+        <Route index element={<Status />} />
+        <Route path="/profile/achivemment" element={<Achevment />} />
+        </Route>
       </Routes>
     </div>
   );

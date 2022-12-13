@@ -9,6 +9,8 @@ import Scan from "./components/Home/Scan";
 import ScanQrCode from "./components/Home/ScanQrCode";
 import Payment from "./components/Home/Payment";
 import PaymentSuccess from "./components/Home/PaymentSuccess";
+import Challange from "./components/DailyChallange/Challange";
+import Profile from "./components/Profile/Profile";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/scanQr" element={<ScanQrCode/>}></Route>
         <Route path="/payment" element={<Payment/>}></Route>
         <Route path="/PaymentSuccess" element={<PaymentSuccess/>}></Route>
+        <Route path="/challange" element={<Challange/>}></Route>
+        <Route path="/profile" element={<Profile/>}></Route>
       </Routes>
     </div>
   );

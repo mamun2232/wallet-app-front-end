@@ -13,6 +13,10 @@ import Challange from "./components/DailyChallange/Challange";
 import Profile from "./components/Profile/Profile";
 import Status from "./components/Profile/Status";
 import Achevment from "./components/Profile/Achevment";
+import Active from "./components/Profile/Active";
+import Setting from "./components/Setting/Setting";
+import Faq from "./components/Setting/Faq";
+import Support from "./components/Setting/Support";
 
 function App() {
   return (
@@ -30,7 +34,11 @@ function App() {
         <Route path="/profile" element={<Profile/>}>
         <Route index element={<Status />} />
         <Route path="/profile/achivemment" element={<Achevment />} />
+        <Route path="/profile/active" element={<Active />} />
         </Route>
+        <Route path="/setting" element={<Setting/>}/>
+        <Route path="/faq" element={<Faq/>}/>
+        <Route path="/support" element={<Support/>}/>
       </Routes>
     </div>
   );

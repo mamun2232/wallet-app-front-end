@@ -30,7 +30,7 @@ const Achevment = () => {
         ></progress>
       </div>
       <div className="mt-3">
-        <h1 className="text-gray-200 text-lg">MEDALS 53</h1>
+        <h1 className="text-gray-200 text-sm">MEDALS 53</h1>
 
         <div className=" flex gap-5">
           <div className="bg-base-200 p-3 w-full h-[90px] rounded-lg">
@@ -63,7 +63,7 @@ const Achevment = () => {
         </div>
 
         <div className="mt-2">
-          <h1 className="text-gray-200 text-lg">MEDALS 53</h1>
+          <h1 className="text-gray-200 text-sm uppercase"> certification</h1>
 
           <Swiper
             spaceBetween={30}
@@ -74,61 +74,70 @@ const Achevment = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <div className="bg-base-200 p-3 w-40 h-[90px] rounded-lg">
-                <div className="flex justify-center">
-                  <div>
-                    <div className=" p-3 w-[5px] block rounded-full bg-yellow-400"></div>
-                    <p className=" block">Gold</p>
-                    <p className=" block text-center">34</p>
+              <div className=" flex gap-2">
+                <div className="bg-base-200 p-3 w-40 h-[90px] rounded-lg">
+                  <div className="flex justify-center">
+                    <div>
+                      <div className=" p-3 w-[5px] block rounded-full bg-yellow-400"></div>
+                      <p className=" block">Gold</p>
+                      <p className=" block text-center">34</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-base-200 p-3 w-40 h-[90px] rounded-lg">
+                  <div className="flex justify-center">
+                    <div>
+                      <div className=" p-3 w-[5px] block rounded-full bg-yellow-400"></div>
+                      <p className=" block">Gold</p>
+                      <p className=" block text-center">34</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-base-200 p-3 w-40 h-[90px] rounded-lg">
+                  <div className="flex justify-center">
+                    <div>
+                      <div className=" p-3 w-[5px] block rounded-full bg-yellow-400"></div>
+                      <p className=" block">Gold</p>
+                      <p className=" block text-center">34</p>
+                    </div>
                   </div>
                 </div>
               </div>
-              Slide 1
+            
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-base-200 p-3 w-40 h-[90px] rounded-lg">
-                <div className="flex justify-center">
-                  <div>
-                    <div className=" p-3 w-[5px] block rounded-full bg-yellow-400"></div>
-                    <p className=" block">Gold</p>
-                    <p className=" block text-center">34</p>
+              <div className=" flex gap-2">
+                <div className="bg-base-200 p-3 w-40 h-[90px] rounded-lg">
+                  <div className="flex justify-center">
+                    <div>
+                      <div className=" p-3 w-[5px] block rounded-full bg-yellow-400"></div>
+                      <p className=" block">Gold</p>
+                      <p className=" block text-center">34</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-base-200 p-3 w-40 h-[90px] rounded-lg">
+                  <div className="flex justify-center">
+                    <div>
+                      <div className=" p-3 w-[5px] block rounded-full bg-yellow-400"></div>
+                      <p className=" block">Gold</p>
+                      <p className=" block text-center">34</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-base-200 p-3 w-40 h-[90px] rounded-lg">
+                  <div className="flex justify-center">
+                    <div>
+                      <div className=" p-3 w-[5px] block rounded-full bg-yellow-400"></div>
+                      <p className=" block">Gold</p>
+                      <p className=" block text-center">34</p>
+                    </div>
                   </div>
                 </div>
               </div>
+            
             </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-base-200 p-3 w-full h-[90px] rounded-lg">
-                <div className="flex justify-center">
-                  <div>
-                    <div className=" p-3 w-[5px] block rounded-full bg-yellow-400"></div>
-                    <p className=" block">Gold</p>
-                    <p className=" block text-center">34</p>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-base-200 p-3 w-full h-[90px] rounded-lg">
-                <div className="flex justify-center">
-                  <div>
-                    <div className=" p-3 w-[5px] block rounded-full bg-yellow-400"></div>
-                    <p className=" block">Gold</p>
-                    <p className=" block text-center">34</p>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-base-200 p-3 w-full h-[90px] rounded-lg">
-                <div className="flex justify-center">
-                  <div>
-                    <div className=" p-3 w-[5px] block rounded-full bg-yellow-400"></div>
-                    <p className=" block">Gold</p>
-                    <p className=" block text-center">34</p>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
+           
           </Swiper>
         </div>
       </div>

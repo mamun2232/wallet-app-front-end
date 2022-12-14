@@ -66,6 +66,7 @@ const Login = () => {
 
         <div className="mt-5">
           <input
+          onClick={()=>navigate("/home")}
             className="bg-[#C52410] w-full  rounded-lg text-white h-[55px]"
             type="submit"
             value="Login"

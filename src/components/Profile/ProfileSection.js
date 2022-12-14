@@ -16,7 +16,7 @@ const ProfileSection = () => {
           <MdOutlineKeyboardBackspace />
         </span>
         <span className="text-white text-lg ">Profile</span>
-        <span className="text-2xl text-white">
+        <span onClick={() => navigate("/setting")} className="text-2xl text-white">
           <AiFillSetting />
         </span>
       </div>
@@ -51,7 +51,7 @@ const ProfileSection = () => {
               <p onClick={()=>navigate("achivemment")} className="text-white ">ACHEVMENMENT</p>
             </div>
             <div>
-              <p className="text-white">ACTIVITY</p>
+              <p onClick={()=>navigate("active")} className="text-white">ACTIVITY</p>
             </div>
           </div>
 

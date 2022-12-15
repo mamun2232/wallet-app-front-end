@@ -58,7 +58,7 @@ const Status = () => {
           <div className="mt-3">
             <h1 className="text-gray-200 text-lg">STRONGEST TOPICS</h1>
     
-            <div className=" h-40 overflow-y-auto">
+            <div className=" h-52 overflow-y-auto">
               <div className="card w-full bg-base-100 shadow-xl">
                 <div className="p-3">
                   <div className=" flex  rounded-lg  gap-3 mt-1">

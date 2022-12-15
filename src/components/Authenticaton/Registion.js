@@ -24,7 +24,7 @@ const Registion = () => {
         </div>
       </div>
 
-      <div className="mt-20">
+      <div className="mt-10">
         <div className="h-[60px] relative">
           <input
             className=" w-full h-[55px]   bg-slate-600 placeholder-white rounded-lg pl-14 text-lg  outline-[#1E1E1E]"
@@ -99,7 +99,7 @@ const Registion = () => {
 
         </div>
 
-        <div className=" flex items-end justify-center h-[90px]">
+        <div className=" flex items-end justify-center h-[85px]">
           <p className="text-gray-100">
             Already have an account?{" "}
             <span

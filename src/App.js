@@ -20,7 +20,7 @@ import Support from "./components/Setting/Support";
 
 function App() {
   return (
-    <div className=" bg-[#1E1E1E] w-[100vw] h-[100vh]">
+    <div className=" bg-[#1E1E1E] w-[100vw] h-screen ">
       <Routes>
         <Route path="/" element={<Login />}></Route>
         <Route path="/register" element={<Registion />}></Route>

@@ -77,7 +77,7 @@ const Login = () => {
           </p>
         </div>
 
-        <div className=" flex items-end justify-center h-[130px]">
+        <div className=" flex items-end justify-center h-[100px]">
           <p className="text-gray-100">
             Don't have any account ?{" "}
             <span onClick={()=> navigate("/register")} className="text-gray-200 font-bold">Create Now</span>

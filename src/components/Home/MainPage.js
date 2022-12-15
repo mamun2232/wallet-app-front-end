@@ -58,7 +58,7 @@ const MainPage = () => {
           </SwiperSlide>
         </Swiper>
 
-        <div className="mt-2">
+        {/* <div className="mt-2">
           <progress
             className="progress progress-error w-full h-[11px]"
             value="100"
@@ -70,11 +70,11 @@ const MainPage = () => {
               100xp to lable up
             </span>
           </div>
-        </div>
+        </div> */}
 
         {/* send monny */}
 
-        <div className="mt-4 flex justify-between">
+        {/* <div className="mt-4 flex justify-between">
           <div>
             <div onClick={()=>navigate("/scanQr")} className=" w-16 h-16 bg-slate-900 rounded-full flex justify-center items-center">
               <span className="text-3xl text-blue-200">
@@ -113,11 +113,11 @@ const MainPage = () => {
               </span>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* recive money history */}
 
-        <div className="mt-5">
+        {/* <div className="mt-5">
           <div className="card full bg-gray-900 shadow-xl h-48">
             <div className="p-4 overflow-y-auto">
               <h1 className="text-2xl  text-white">History</h1>
@@ -175,7 +175,7 @@ const MainPage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

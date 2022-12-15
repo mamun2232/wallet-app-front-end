@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillCamera, AiFillSetting } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
-import { MdOutlineKeyboardBackspace, MdSettingsPower } from "react-icons/md";
+import { MdOutlineKeyboardBackspace,  } from "react-icons/md";
 import { Outlet, useNavigate } from "react-router-dom";
 
 const ProfileSection = () => {
@@ -11,19 +11,22 @@ const ProfileSection = () => {
       <div className="pt-2 flex justify-between items-center">
         <span
           onClick={() => navigate("/home")}
-          className=" text-white text-3xl "
+          className=" text-[#ffffff] text-[33px] "
         >
           <MdOutlineKeyboardBackspace />
         </span>
-        <span className="text-white text-lg ">Profile</span>
-        <span onClick={() => navigate("/setting")} className="text-2xl text-white">
+        <span className="text-[#ffffff] text-[20px] ">Profile</span>
+        <span
+          onClick={() => navigate("/setting")}
+          className="text-2xl text-white"
+        >
           <AiFillSetting />
         </span>
       </div>
 
       <div>
-        <div className="mt-5 flex justify-center">
-          <div className=" rounded-full  bg-gray-700 w-28 h-28 relative ">
+        <div className="mt-3 flex justify-center">
+          <div className=" rounded-full  bg-gray-700 w-[124px] h-[124px] relative ">
             <div className=" flex justify-center pt-6">
               <span className="text-6xl text-white ">
                 <CgProfile />
@@ -31,31 +34,37 @@ const ProfileSection = () => {
             </div>
           </div>
         </div>
-        <div className="w-[45px] h-[45px] bg-[#C52410] flex justify-center items-center rounded-full absolute top-[140px]  right-[100px]">
+        <div className="w-[51px] h-[51px] bg-gradient-to-b  from-[#C52410] to-[#E6550A] flex justify-center items-center rounded-full absolute top-[140px]  right-[110px]">
           <span className="text-2xl text-white">
             <AiFillCamera />
           </span>
         </div>
-        <h1 className="text-2xl font-bold text-white text-center">
+        <h1 className="text-[32px]  text-[#ffffff] text-center">
           Mike Tieson
         </h1>
-        <span className="text-sm text-white  flex justify-center">
+        <span className="text-[16px] text-[#BAC5C8]  flex justify-center">
           miketieso@gmail.com
         </span>
       </div>
       <div className=" flex justify-between gap-3 mt-2">
-            <div className=" border-l-white border-r-2  h-8 pr-8">
-              <p onClick={()=>navigate("/profile")} className="text-white">STATUS</p>
-            </div>
-            <div className=" border-l-white border-r-2  h-8 pr-4">
-              <p onClick={()=>navigate("achivemment")} className="text-white ">ACHEVMENMENT</p>
-            </div>
-            <div>
-              <p onClick={()=>navigate("active")} className="text-white">ACTIVITY</p>
-            </div>
-          </div>
+        <div className=" border-l-[#BAC5C8] border-r-2  h-8 pr-8">
+          <p onClick={() => navigate("/profile")} className="text-[#587EFF]">
+            STATUS
+          </p>
+        </div>
+        <div className=" border-l-[#BAC5C8]  border-r-2  h-8 pr-4">
+          <p onClick={() => navigate("achivemment")} className="text-[#BAC5C8] ">
+            ACHEVMENMENT
+          </p>
+        </div>
+        <div>
+          <p onClick={() => navigate("active")} className="text-[#BAC5C8]">
+            ACTIVITY
+          </p>
+        </div>
+      </div>
 
-       <Outlet/>
+      <Outlet />
     </div>
   );
 };

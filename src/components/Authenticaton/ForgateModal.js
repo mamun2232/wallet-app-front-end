@@ -58,21 +58,23 @@ const ForgateModal = ({ closeModal, openModal, isOpen }) => {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel
-                  className={`w-full  max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all ${
+                  className={`w-full  max-w-md transform overflow-hidden rounded-2xl bg-[#434343] p-6 text-left align-middle shadow-xl transition-all ${
                     code ? (success ? "h-[180px]" : "h-[340px]") : "h-[270px]"
                   } `}
                 >
                   {!email && (
                     <div className="">
-                      <p className="text-xl font-bold">Forgot Password</p>
-                      <p className="text-sm mt-2">
+                      <p className="text-xl text-[#ffffff]  font-medium text-[24px]">
+                        Forgot Password
+                      </p>
+                      <p className="text-[15px] text-gray-300 mt-2">
                         Enter your email for verfiction process, we well send 4
                         digits code to your email
                       </p>
                       <div className="mt-6">
                         <div className="h-[60px] mt-3 relative">
                           <input
-                            className=" w-full h-[55px] bg-slate-600  placeholder-white  rounded-lg pl-14 text-lg  outline-[#1E1E1E]"
+                            className=" w-full h-[55px] modalColur placeholder-[#DADADA]  rounded-lg pl-14 text-lg  outline-[#1E1E1E]"
                             type="email"
                             name="email"
                             placeholder="email"
@@ -89,7 +91,7 @@ const ForgateModal = ({ closeModal, openModal, isOpen }) => {
                         <div className="mt-2">
                           <input
                             onClick={() => sendEmailVerificatinHendeler()}
-                            className="bg-[#C52410] w-full  rounded-lg text-white h-[55px]"
+                            className="bg-gradient-to-b  from-[#C52410] to-[#E6550A] w-full  rounded-lg text-white h-[55px]"
                             type="submit"
                             value="Next"
                           />
@@ -100,33 +102,33 @@ const ForgateModal = ({ closeModal, openModal, isOpen }) => {
 
                   {!code && email && (
                     <div>
-                      <p className="text-xl font-bold">Enter 4 Digit Code</p>
-                      <p className="text-sm mt-2">
+                      <p className="text-xl text-[#ffffff]  font-medium text-[24px]">Enter 4 Digit Code</p>
+                      <p className="text-[15px] text-gray-300 mt-2">
                         Enter 4 digit code that you recevied on your Email
                         Address
                       </p>
                       <div className="mt-6 flex justify-between">
                         <input
-                          className="w-[60px] h-[55px]  text-center  bg-slate-600 placeholder-white rounded-lg p-2 text-3xl  outline-[#1E1E1E]"
+                          className="w-[60px] h-[55px]  text-center  modalColur placeholder-[#DADADA] rounded-lg p-2 text-3xl  outline-[#1E1E1E]"
                           type="number"
                         />
                         <input
-                          className="w-[60px] h-[55px]  text-center  bg-slate-600 placeholder-white rounded-lg p-2 text-3xl  outline-[#1E1E1E]"
+                          className="w-[60px] h-[55px]  text-center  modalColur placeholder-[#DADADA] rounded-lg p-2 text-3xl  outline-[#1E1E1E]"
                           type="number"
                         />
                         <input
-                          className="w-[60px] h-[55px]  text-center  bg-slate-600 placeholder-white rounded-lg p-2 text-3xl  outline-[#1E1E1E]"
+                          className="w-[60px] h-[55px]  text-center  modalColur placeholder-[#DADADA] rounded-lg p-2 text-3xl  outline-[#1E1E1E]"
                           type="number"
                         />
                         <input
-                          className="w-[60px] h-[55px]  text-center  bg-slate-600 placeholder-white rounded-lg p-2 text-3xl  outline-[#1E1E1E]"
+                          className="w-[60px] h-[55px]  text-center  modalColur placeholder-[#DADADA] rounded-lg p-2 text-3xl  outline-[#1E1E1E]"
                           type="number"
                         />
                       </div>
                       <div className="mt-4">
                         <input
                           onClick={() => codeRecieverHendeler()}
-                          className="bg-[#C52410] w-full  rounded-lg text-white h-[55px]"
+                          className="bg-gradient-to-b  from-[#C52410] to-[#E6550A]  w-full  rounded-lg text-white h-[55px]"
                           type="submit"
                           value="Next"
                         />
@@ -136,15 +138,15 @@ const ForgateModal = ({ closeModal, openModal, isOpen }) => {
 
                   {email && code && !newPass && (
                     <div className="">
-                      <p className="text-xl font-bold">Reset Password</p>
-                      <p className="text-sm mt-2">
+                      <p className="text-xl text-[#ffffff]  font-medium text-[24px]">Reset Password</p>
+                      <p className="text-[15px] text-gray-300 mt-2">
                         Set your new Password for your account so you can login
                         and keep things going.
                       </p>
                       <div className="">
                         <div className="h-[60px] mt-6 relative">
                           <input
-                            className=" w-full h-[55px] bg-slate-600  placeholder-white  rounded-lg pl-14 text-lg  outline-[#1E1E1E]"
+                            className=" w-full h-[55px] modalColur placeholder-[#DADADA]   rounded-lg pl-14 text-lg  outline-[#1E1E1E]"
                             type="password"
                             name="password"
                             placeholder="Password"
@@ -162,7 +164,7 @@ const ForgateModal = ({ closeModal, openModal, isOpen }) => {
                         </div>
                         <div className="h-[60px] mt-2 relative">
                           <input
-                            className=" w-full h-[55px] bg-slate-600  placeholder-white  rounded-lg pl-14 text-lg  outline-[#1E1E1E]"
+                            className=" w-full h-[55px] modalColur placeholder-[#DADADA]   rounded-lg pl-14 text-lg  outline-[#1E1E1E]"
                             type="password"
                             name="password"
                             placeholder="Confirm Password"
@@ -182,7 +184,7 @@ const ForgateModal = ({ closeModal, openModal, isOpen }) => {
                         <div className="mt-2">
                           <input
                             onClick={() => newPassRecieverHendeler()}
-                            className="bg-[#C52410] w-full  rounded-lg text-white h-[55px]"
+                            className="bg-gradient-to-b  from-[#C52410] to-[#E6550A] w-full  rounded-lg text-white h-[55px]"
                             type="submit"
                             value="Reset Password"
                           />
@@ -193,13 +195,13 @@ const ForgateModal = ({ closeModal, openModal, isOpen }) => {
 
                   {email && code && newPass && success && (
                     <div className="">
-                      <p className="text-xl font-bold">Reset Password</p>
-                      <p className="text-sm mt-2">Password successfull Reset</p>
+                      <p className="text-xl text-[#ffffff]  font-medium text-[24px]">Reset Password</p>
+                      <p className="text-[15px] text-gray-300 mt-2">Password successfull Reset</p>
                       <div className="mt-6">
                         <div className="mt-2">
                           <input
                             onClick={() => closeModal()}
-                            className="bg-[#C52410] w-full  rounded-lg text-white h-[55px]"
+                            className="bg-gradient-to-b  from-[#C52410] to-[#E6550A]  w-full  rounded-lg text-white h-[55px]"
                             type="submit"
                             value="Complete"
                           />

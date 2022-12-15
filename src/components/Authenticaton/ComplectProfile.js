@@ -33,7 +33,7 @@ const ComplectProfile = () => {
               
             </div>
           </div>
-          <div className="w-[45px] h-[45px] bg-[#C52410] flex justify-center items-center rounded-full absolute top-[210px]  right-[100px]">
+          <div className="w-[45px] h-[45px] bg-[#C52410] flex justify-center items-center rounded-full absolute top-[210px]  right-[115px]">
             <span className="text-2xl text-white">
               <AiFillCamera />
             </span>

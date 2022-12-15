@@ -5,43 +5,68 @@ import { useNavigate } from "react-router-dom";
 const Product = () => {
   const navigate = useNavigate();
   const procut = [
-    { procut: 1 },
-    { procut: 2 },
-    { procut: 3 },
-    { procut: 4 },
-    { procut: 5 },
-    { procut: 6 },
-    { procut: 6 },
-    { procut: 6 },
+    { img:  "https://vaya.in/recipes/wp-content/uploads/2018/05/Coffee.jpg",
+    name: "Coffe Beans",
+    title: " One Cap copy with mix",
+    price: "200.05"
+   },
+    { img:  "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?cs=srgb&dl=pexels-ash-376464.jpg&fm=jpg",
+    name: "Food",
+    title: " One Cap copy with mix",
+    price: "200.05"
+   },
+    { img:  "https://img.freepik.com/free-vector/modern-coupon-template-with-flat-design_23-2147964693.jpg?w=2000",
+    name: "Coupon",
+    title: " One Cap copy with mix",
+    price: "200.05"
+   },
+    { img:  "https://images.news18.com/ibnlive/uploads/2018/12/Alcohol.jpg?im=FitAndFill,width=1200,height=1200",
+    name: "Drinks",
+    title: " One Cap copy with mix",
+    price: "200.05"
+   },
+    { img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBFF9wTEzpm7DnceDqGrXlvVHN-forx0rsCcgJEf3eMP4f_YZ3cOwozOmeMS8w5S23lmk&usqp=CAU",
+    name: "Pineapple",
+    title: " One Cap copy with mix",
+    price: "200.05"
+   },
+    { img:  "https://www.mashed.com/img/gallery/doing-this-could-make-you-actually-like-drinking-black-coffee/l-intro-1641943654.jpg",
+    name: "Black Coffee",
+    title: " One Cap copy with mix",
+    price: "200.05"
+   },
+   
   ];
   return (
     <div className="pt-5 max-w-7xl m-auto px-4">
       <div className="pt-5 flex justify-between">
         <span
           onClick={() => navigate("/home")}
-          className=" text-white text-3xl "
+          className=" text-white text-[33px] "
         >
           <MdOutlineKeyboardBackspace />
         </span>
-        <span className="text-white text-lg ">Shop</span>
+        <span className="text-white text-[24px] ">Shop</span>
         <span></span>
       </div>
 
-      <div className=" mt-5  grid grid-cols-2 lg:grid-cols-3 gap-2  h-[80vh] overflow-y-auto">
+      <div className=" mt-5  grid grid-cols-2 lg:grid-cols-3 gap-[10px]  h-[78vh] overflow-y-auto">
         {procut.map((product) => (
-          <div className="card w-full bg-gray-100 shadow-sm p-3">
+          <div className="card w-full modalColur h-[193px] rounded-[8px] p-4">
             <figure className="">
               <img
-                src="https://images.everydayhealth.com/images/diet-nutrition/34da4c4e-82c3-47d7-953d-121945eada1e00-giveitup-unhealthyfood.jpg?sfvrsn=a31d8d32_0"
+                src={product.img}
                 alt="Shoes"
-                className="rounded-lg w-full h-[70px]"
+                className=" w-[137px] rounded-[4px] h-[103px]"
               />
             </figure>
 
-            <div className=" mt-1 text-center ">
-              <h1 className="text-black font-medium">Coffe Beans</h1>
-              <small className="text-black">One Cap copy with mix</small>
-              <p className="text-black font-medium"> $200.05</p>
+            <div className=" mt-2 text-center ">
+              <h1 className="text-[#ffffff] text-[16px] leading-none ">{product.name}</h1>
+              <small className="text-[#BAC5C8] text-[10px]">
+               {product.title}
+              </small>
+              <p className="text-[#ffffff] text-[16px]"> ${product.price}</p>
             </div>
           </div>
         ))}

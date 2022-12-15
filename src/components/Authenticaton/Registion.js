@@ -2,6 +2,8 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiShow } from "react-icons/bi";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
+import { RiLockPasswordFill } from "react-icons/ri";
+import { CgProfile} from "react-icons/cg";
 import { useNavigate } from "react-router-dom";
 
 const Registion = () => {
@@ -9,7 +11,7 @@ const Registion = () => {
   return (
     <div className="max-w-7xl m-auto px-6">
       <div className="pt-5">
-        <span onClick={()=> navigate("/")} className=" text-white text-3xl ">
+        <span onClick={()=> navigate("/")} className=" text-white text-[24px] ">
           <MdOutlineKeyboardBackspace />
         </span>
       </div>
@@ -27,7 +29,7 @@ const Registion = () => {
       <div className="mt-10">
         <div className="h-[60px] relative">
           <input
-            className=" w-full h-[55px]   bg-slate-600 placeholder-white rounded-lg pl-14 text-lg  outline-[#1E1E1E]"
+            className=" w-full h-[55px]   modalColur placeholder-[#DADADA] text-white rounded-lg pl-14 text-lg  outline-[#1E1E1E]"
             type="text"
             name="name"
             placeholder="Name"
@@ -35,13 +37,13 @@ const Registion = () => {
           />
           <div>
             <span className=" text-white text-3xl absolute top-3 left-4">
-              <AiOutlineMail />
+              <CgProfile />
             </span>
           </div>
         </div>
         <div className="h-[60px] mt-3 relative">
           <input
-            className=" w-full h-[55px]   bg-slate-600 placeholder-white rounded-lg pl-14 text-lg  outline-[#1E1E1E]"
+            className=" w-full h-[55px]   modalColur placeholder-[#DADADA] text-white rounded-lg pl-14 text-lg  outline-[#1E1E1E]"
             type="email"
             name="email"
             placeholder="Email"
@@ -55,7 +57,7 @@ const Registion = () => {
         </div>
         <div className="h-[60px] mt-3 relative">
           <input
-            className=" w-full h-[55px] bg-slate-600  placeholder-white  rounded-lg pl-14 text-lg  outline-[#1E1E1E]"
+            className=" w-full h-[55px] modalColur placeholder-[#DADADA] text-white  rounded-lg pl-14 text-lg  outline-[#1E1E1E]"
             type="password"
             name="password"
             placeholder="Password"
@@ -64,7 +66,7 @@ const Registion = () => {
 
           <div>
             <span className=" text-white  text-3xl absolute top-3 left-4">
-              <AiOutlineMail />
+              <RiLockPasswordFill/>
             </span>
             <span className="text-white  text-3xl absolute top-3 right-4">
               <BiShow />
@@ -73,7 +75,7 @@ const Registion = () => {
         </div>
         <div className="h-[60px] mt-3 relative">
           <input
-            className=" w-full h-[55px] bg-slate-600  placeholder-white  rounded-lg pl-14 text-lg  outline-[#1E1E1E]"
+            className=" w-full h-[55px] modalColur placeholder-[#DADADA] text-white  rounded-lg pl-14 text-lg  outline-[#1E1E1E]"
             type="password"
             name="password"
             placeholder="Confirm Password"
@@ -82,7 +84,7 @@ const Registion = () => {
 
           <div>
             <span className=" text-white  text-3xl absolute top-3 left-4">
-              <AiOutlineMail />
+              <RiLockPasswordFill />
             </span>
             <span className="text-white  text-3xl absolute top-3 right-4">
               <BiShow />
@@ -92,7 +94,7 @@ const Registion = () => {
 
         <div className="mt-5">
           <input
-            className="bg-[#C52410] w-full  rounded-lg text-white h-[55px]"
+            className="bg-gradient-to-b  from-[#C52410] to-[#E6550A] w-full  rounded-lg text-white h-[55px]"
             type="submit"
             value="Create Account"
           />

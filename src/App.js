@@ -17,6 +17,8 @@ import Active from "./components/Profile/Active";
 import Setting from "./components/Setting/Setting";
 import Faq from "./components/Setting/Faq";
 import Support from "./components/Setting/Support";
+import Shop from "./components/Shop/Shop";
+import Wallet from "./components/Wallet/Wallet";
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
         <Route path="/setting" element={<Setting/>}/>
         <Route path="/faq" element={<Faq/>}/>
         <Route path="/support" element={<Support/>}/>
+        <Route path="/shop" element={<Shop/>}/>
+        <Route path="/wallet" element={<Wallet/>}/>
       </Routes>
     </div>
   );

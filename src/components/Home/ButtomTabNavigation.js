@@ -7,17 +7,12 @@ import { useNavigate } from "react-router-dom";
 
 const ButtomTabNavigation = () => {
   const navigate = useNavigate();
-  const [cuvbed, setCuvbed] = useState({
-    pathX: "357",
-    pathY: "675",
-    pathA: "689",
-    pathB: "706",
-  });
+
   return (
     <>
       <div className="relative h-16 ">
         <div className="fixed bottom-0  w-full  flex  justify-between     rounded-sm  lg:w-full  h-16 items-center  text-white">
-          <div className="  flex-1 bg-slate-900 h-16 flex  justify-between     items-center px-4">
+          <div className="  flex-1 bg-slate-900 h-16 flex    justify-center  items-center ">
             <span
               onClick={() => navigate("/home")}
               className="text-2xl text-red-500"
@@ -25,28 +20,29 @@ const ButtomTabNavigation = () => {
               <AiFillHome />
             </span>
           </div>
-          <div className="flex-1 bg-slate-900 h-16 flex  justify-between     items-center px-2 " >
-            <span
-              onClick={() => navigate("/challange")}
-              className="text-2xl text-red-500"
-            >
-              <AiFillHome />
+          <div className="flex-1 bg-slate-900 h-16 flex  justify-center     items-center ">
+            <span onClick={() => navigate("/challange")} className="text-2xl ">
+              <img className="text-red-500" src="/picture/Vector.svg" alt="" />
             </span>
           </div>
-          <div className="  absolute  flex justify-center items-center rounded-full top-[-40px] left-[42vw] bg-slate-900 w-[70px] h-[60px]">
-            <span className="text-2xl text-red-500">
+          <div className="  absolute  flex justify-center items-center rounded-full top-[-40px] left-[41vw] bg-slate-900 w-[70px] h-[70px]  ">
+            <span
+              onClick={() => navigate("/wallet")}
+              className="text-2xl text-red-500 "
+            >
               <BsCreditCard2Back />
             </span>
           </div>
-          <div className="flex-1 bg-slate-900 h-16 flex  justify-between     items-center px-2">
-        
-        </div>
-          <div className="flex-1 bg-slate-900 h-16 flex  justify-between     items-center px-2">
-            <span className="text-2xl text-red-500">
+          <div className="flex-1 bg-slate-900 h-full flex  justify-center       items-center "></div>
+          <div className="flex-1 bg-slate-900 h-16 flex  justify-center        items-center ">
+            <span
+              onClick={() => navigate("/shop")}
+              className="text-2xl text-red-500"
+            >
               <AiOutlineShoppingCart />
             </span>
           </div>
-          <div className="flex-1 bg-slate-900 h-16 flex  justify-between     items-center px-">
+          <div className="flex-1 bg-slate-900 h-16 flex  justify-center       items-center px-">
             <span
               onClick={() => navigate("/profile")}
               className="text-2xl text-red-500"

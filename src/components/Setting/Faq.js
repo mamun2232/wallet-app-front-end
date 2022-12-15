@@ -44,8 +44,8 @@ const Faq = () => {
             </div>
           </div>
 
-          <div className=" flex gap-3">
-            <div className=" w-full bg-base-200 rounded-lg h-[96px] p-3">
+          <div className=" flex flex-row  gap-3  overflow-scroll  ">
+            <div className="w-[350px] bg-base-200 rounded-lg h-[96px] p-3">
               <p className="text-2xl text-blue-900">
                 <IoIosNotificationsOutline />
               </p>
@@ -54,7 +54,7 @@ const Faq = () => {
                 <span className=" font-bold">Getting Start</span>
               </p>
             </div>
-            <div className=" w-full bg-base-200 rounded-lg h-[96px] p-3">
+            <div className=" sm:w-[350px]  bg-base-200 rounded-lg h-[96px] p-3">
               <p className="text-2xl text-blue-900">
                 <IoIosNotificationsOutline />
               </p>
@@ -63,7 +63,7 @@ const Faq = () => {
                 <span className=" font-bold">Getting Start</span>
               </p>
             </div>
-            {/* <div className=" w-full bg-base-200 rounded-lg h-[96px] p-3">
+            <div className="  w-[350px]  bg-base-200 rounded-lg h-[96px] p-3">
               <p className="text-2xl text-blue-900">
                 <IoIosNotificationsOutline />
               </p>
@@ -71,7 +71,35 @@ const Faq = () => {
                 Question about <br />
                 <span className=" font-bold">Getting Start</span>
               </p>
-            </div> */}
+            </div>
+            <div className="  w-[350px] bg-base-200 rounded-lg h-[96px] p-3">
+              <p className="text-2xl text-blue-900">
+                <IoIosNotificationsOutline />
+              </p>
+              <p>
+                Question about <br />
+                <span className=" font-bold">Getting Start</span>
+              </p>
+            </div>
+            <div className="  w-[350px] bg-base-200 rounded-lg h-[96px] p-3">
+              <p className="text-2xl text-blue-900">
+                <IoIosNotificationsOutline />
+              </p>
+              <p>
+                Question about <br />
+                <span className=" font-bold">Getting Start</span>
+              </p>
+            </div>
+            <div className=" w-[350px] bg-base-200 rounded-lg h-[96px] p-3">
+              <p className="text-2xl text-blue-900">
+                <IoIosNotificationsOutline />
+              </p>
+              <p>
+                Question about <br />
+                <span className=" font-bold">Getting Start</span>
+              </p>
+            </div>
+            
           </div>
 
           <div className="mt-7">

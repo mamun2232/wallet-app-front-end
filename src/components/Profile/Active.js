@@ -17,12 +17,12 @@ const Active = () => {
                 Recevied one Toot Stramp
               </p>
               <small className="text-[15px]  text-gray-200  my-0">
-                May 1,2022 . 5/7 corrent
+              May 1, 2022 • 5/7 Correct
               </small>
             </div>
           </div>
         </div>
-        <div className=" flex  rounded-lg  gap-3 mt-1">
+        <div className=" flex  rounded-lg  gap-3 mt-2">
           <div className=" flex justify-cente items-center">
             <span className=" text-white text-[40px]">
               <AiOutlineCheckCircle />
@@ -31,7 +31,24 @@ const Active = () => {
           <div>
             <div>
               <p className="text-[17px]   text-[#FFFFFF] my-0 py-0">
-                Recevied one Toot Stramp
+              Earned Gold in Drive-Thru 101: 
+              </p>
+              <small className="text-[15px]  text-gray-200  my-0">
+              May 1, 2022 • 5/7 Correct
+              </small>
+            </div>
+          </div>
+        </div>
+        <div className=" flex  rounded-lg  gap-3 mt-2">
+          <div className=" flex justify-cente items-center">
+            <span className=" text-white text-[40px]">
+              <AiOutlineCheckCircle />
+            </span>
+          </div>
+          <div>
+            <div>
+              <p className="text-[17px]   text-[#FFFFFF] my-0 py-0">
+              Earned Bronze in Drive-Thru 
               </p>
               <small className="text-[15px]  text-gray-200  my-0">
                 May 1,2022 . 5/7 corrent
@@ -39,7 +56,7 @@ const Active = () => {
             </div>
           </div>
         </div>
-        <div className=" flex  rounded-lg  gap-3 mt-1">
+        <div className=" flex  rounded-lg  gap-3 mt-2">
           <div className=" flex justify-cente items-center">
             <span className=" text-white text-[40px]">
               <AiOutlineCheckCircle />
@@ -48,7 +65,7 @@ const Active = () => {
           <div>
             <div>
               <p className="text-[17px]   text-[#FFFFFF] my-0 py-0">
-                Recevied one Toot Stramp
+              Earned Silver in Drive-Thru 
               </p>
               <small className="text-[15px]  text-gray-200  my-0">
                 May 1,2022 . 5/7 corrent
@@ -56,7 +73,7 @@ const Active = () => {
             </div>
           </div>
         </div>
-        <div className=" flex  rounded-lg  gap-3 mt-1">
+        <div className=" flex  rounded-lg  gap-3 mt-2">
           <div className=" flex justify-cente items-center">
             <span className=" text-white text-[40px]">
               <AiOutlineCheckCircle />
@@ -65,7 +82,7 @@ const Active = () => {
           <div>
             <div>
               <p className="text-[17px]   text-[#FFFFFF] my-0 py-0">
-                Recevied one Toot Stramp
+              Earned Silver in Drive-Thru 
               </p>
               <small className="text-[15px]  text-gray-200  my-0">
                 May 1,2022 . 5/7 corrent
@@ -73,7 +90,7 @@ const Active = () => {
             </div>
           </div>
         </div>
-        <div className=" flex  rounded-lg  gap-3 mt-1">
+        <div className=" flex  rounded-lg  gap-3 mt-2">
           <div className=" flex justify-cente items-center">
             <span className=" text-white text-[40px]">
               <AiOutlineCheckCircle />
@@ -82,24 +99,7 @@ const Active = () => {
           <div>
             <div>
               <p className="text-[17px]   text-[#FFFFFF] my-0 py-0">
-                Recevied one Toot Stramp
-              </p>
-              <small className="text-[15px]  text-gray-200  my-0">
-                May 1,2022 . 5/7 corrent
-              </small>
-            </div>
-          </div>
-        </div>
-        <div className=" flex  rounded-lg  gap-3 mt-1">
-          <div className=" flex justify-cente items-center">
-            <span className=" text-white text-[40px]">
-              <AiOutlineCheckCircle />
-            </span>
-          </div>
-          <div>
-            <div>
-              <p className="text-[17px]   text-[#FFFFFF] my-0 py-0">
-                Recevied one Toot Stramp
+              Earned Gold in Drive-Thru 
               </p>
               <small className="text-[15px]  text-gray-200  my-0">
                 May 1,2022 . 5/7 corrent

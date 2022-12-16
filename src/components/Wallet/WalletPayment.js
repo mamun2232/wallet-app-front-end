@@ -17,7 +17,7 @@ const WalletPayment = () => {
           </h1>
         </div>
       </div>
-      <div className=" h-[30vh] flex  items-end justify-center">
+      <div className=" h-[20vh] flex  items-end justify-center">
         <button className="bg-gradient-to-b  from-[#C52410] to-[#E6550A]    rounded-lg text-white h-[55px] w-32">
           Next
         </button>

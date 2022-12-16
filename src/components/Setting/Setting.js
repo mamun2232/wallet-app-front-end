@@ -1,7 +1,10 @@
 import React from "react";
 import { AiFillCamera } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
-import { MdOutlineKeyboardBackspace, MdOutlineNavigateNext } from "react-icons/md";
+import {
+  MdOutlineKeyboardBackspace,
+  MdOutlineNavigateNext,
+} from "react-icons/md";
 import { GrFormNext } from "react-icons/gr";
 import { useNavigate } from "react-router-dom";
 
@@ -38,7 +41,7 @@ const Setting = () => {
         <div className=" text-center mt-1">
           <button
             onClick={() => navigate("/complectProfile")}
-            className= "bg-gradient-to-b  from-[#C52410] to-[#E6550A] px-8 py-2 rounded-lg text-white my-1"
+            className="bg-gradient-to-b  from-[#C52410] to-[#E6550A] px-8 py-2 rounded-lg text-white my-1"
           >
             Edit Profile
           </button>
@@ -49,19 +52,30 @@ const Setting = () => {
         </div>
       </div>
 
-      <div className="mt-10">
-        <div className="card w-full modalColur shadow-xl pb-5">
+      <div className="mt-10 h-[55vh] overflow-y-auto">
+        <div className="card w-full modalColur  shadow-xl pb-5">
           <div className="p-4">
-            <div onClick={()=> navigate("/faq")} className=" border-[#FFFFFF]  border-b-2 h-16 flex  items-center justify-between">
-              <p className=" font-medium text-[20px] text-[#FFFFFF]">Notification Setting</p>
+            <div
+             
+              className=" border-[#FFFFFF]  border-b-2 h-16 flex  items-center justify-between"
+            >
+              <p className=" font-medium text-[20px] text-[#FFFFFF]">
+                Notification Setting
+              </p>
               <span className="text-3xl text-[#FFFFFF] ">
-              <MdOutlineNavigateNext />
+                <MdOutlineNavigateNext />
               </span>
             </div>
-            <div onClick={()=> navigate("/support")}   className=" border-[#FFFFFF]  border-b-2 h-16 flex  items-center justify-between">
-              <p  className=" font-medium  text-[20px] text-[#FFFFFF]">Frequently Asked Question</p>
+            <div
+            onClick={() => navigate("/faq")}
+              
+              className=" border-[#FFFFFF]  border-b-2 h-16 flex  items-center justify-between"
+            >
+              <p className=" font-medium  text-[20px] text-[#FFFFFF]">
+                Frequently Asked Question
+              </p>
               <span className="text-3xl text-[#FFFFFF] ">
-              <MdOutlineNavigateNext />
+                <MdOutlineNavigateNext />
               </span>
             </div>
             <div className=" border-[#FFFFFF] border-b-2 h-16 flex  items-center justify-between">
@@ -71,9 +85,31 @@ const Setting = () => {
               </span>
             </div>
             <div className=" border-[#FFFFFF]  border-b-2 h-16 flex  items-center justify-between">
-              <p className="font-medium  text-[20px] text-[#FFFFFF]">Add Crypto</p>
+              <p className="font-medium  text-[20px] text-[#FFFFFF]">
+                Add Crypto Wallet
+              </p>
               <span className="text-3xl text-[#FFFFFF] ">
-              <MdOutlineNavigateNext />
+                <MdOutlineNavigateNext />
+              </span>
+            </div>
+            <div className=" border-[#FFFFFF]  border-b-2 h-16 flex  items-center justify-between">
+              <p className="font-medium  text-[20px] text-[#FFFFFF]">
+                Privacy Policy
+              </p>
+              <span className="text-3xl text-[#FFFFFF] ">
+                <MdOutlineNavigateNext />
+              </span>
+            </div>
+            <div className=" border-[#FFFFFF]  border-b-2 h-16 flex  items-center justify-between">
+              <p className="font-medium  text-[20px] text-[#FFFFFF]">About</p>
+              <span className="text-3xl text-[#FFFFFF] ">
+                <MdOutlineNavigateNext />
+              </span>
+            </div>
+            <div onClick={() => navigate("/support")} className=" border-[#FFFFFF]  border-b-2 h-16 flex  items-center justify-between">
+              <p className="font-medium  text-[20px] text-[#FFFFFF]">Support</p>
+              <span className="text-3xl text-[#FFFFFF] ">
+                <MdOutlineNavigateNext />
               </span>
             </div>
           </div>

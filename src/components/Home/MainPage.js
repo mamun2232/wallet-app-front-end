@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { MdAdd } from "react-icons/md";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -6,18 +6,35 @@ import { AiOutlineScan } from "react-icons/ai";
 import { FaMoneyCheckAlt } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../firebase.init";
 const MainPage = () => {
   const navigate = useNavigate()
+  const [user] = useAuthState(auth)
+
+  const [myCard , setMyCard] = useState([])
+  useEffect(()=>{
+    const id = localStorage.getItem("WalletUserId");
+    fetch(`http://localhost:5000/api/v1/loyaliCard/myCard/${id}` )
+    .then((res) =>res.json())
+    .then((data) => {
+      console.log(data);
+      if(data.success){
+        setMyCard(data.card)
+      }
+    })
+  },[])
+  console.log(myCard)
   return (
     <div className="pt-5 max-w-7xl m-auto px-6">
       <div className=" flex justify-between mt-2">
         <div>
-          <h1 className=" text-4xl text-white font-bold">Hey Make,</h1>
+          <h1 className=" text-4xl text-white font-bold">{user?.displayName},</h1>
           <p className="text-sm mt-1 text-gray-100">Happy to see you again.</p>
         </div>
         <div className=" flex items-end ">
           <div className="w-8 h-8 flex justify-center items-center rounded-full bg-slate-500">
-            <span className="text-2xl text-white font-bold">
+            <span onClick={()=>navigate("/loyaltyCard")} className="text-2xl text-white font-bold  cursor-pointer">
               <MdAdd />
             </span>
           </div>
@@ -36,11 +53,15 @@ const MainPage = () => {
           className="mySwiper"
         >
           <SwiperSlide>
+            {/*
+            /> */}
+            <div className=" h-[175px] w-full rounded-lg bg-slate-200" >
             <img
               className=" rounded-lg w-full h-[180px] lg:w-full lg:h-[300px]"
-              src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt=""
-            />
+              src="/picture/loyalityCard.png"
+              alt="" />
+
+            </div>
           </SwiperSlide>
           <SwiperSlide>
             <img

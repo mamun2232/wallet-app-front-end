@@ -7,6 +7,8 @@ import {
 } from "react-icons/md";
 import { GrFormNext } from "react-icons/gr";
 import { useNavigate } from "react-router-dom";
+import { signOut } from "firebase/auth";
+import auth from "../firebase.init";
 
 const Setting = () => {
   const navigate = useNavigate();
@@ -108,6 +110,12 @@ const Setting = () => {
             </div>
             <div onClick={() => navigate("/support")} className=" border-[#FFFFFF]  border-b-2 h-16 flex  items-center justify-between">
               <p className="font-medium  text-[20px] text-[#FFFFFF]">Support</p>
+              <span className="text-3xl text-[#FFFFFF] ">
+                <MdOutlineNavigateNext />
+              </span>
+            </div>
+            <div onClick={() => signOut(auth)} className=" border-[#FFFFFF]  border-b-2 h-16 flex  items-center justify-between">
+              <p className="font-medium  text-[20px] text-[#FFFFFF]">Logout</p>
               <span className="text-3xl text-[#FFFFFF] ">
                 <MdOutlineNavigateNext />
               </span>

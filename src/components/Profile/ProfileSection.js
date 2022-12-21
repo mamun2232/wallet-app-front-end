@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AiFillCamera, AiFillSetting } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import { MdOutlineKeyboardBackspace,  } from "react-icons/md";
@@ -6,6 +6,21 @@ import { Outlet, useNavigate } from "react-router-dom";
 
 const ProfileSection = () => {
   const navigate = useNavigate();
+  const [user , setUser] = useState({})
+  useEffect(()=>{
+    const id = localStorage.getItem("WalletUserId");
+    fetch(`http://localhost:5000/api/v1/user/userDetials/${id}`)
+    .then((res) => res.json())
+    .then((data)=>{
+      if(data.success){
+        setUser(data.user)
+
+      }
+    })
+  },[])
+
+  console.log(user);
+  
   return (
     <div className="pt-5 max-w-7xl m-auto px-6">
       <div className="pt-2 flex justify-between items-center">
@@ -40,10 +55,10 @@ const ProfileSection = () => {
           </span>
         </div>
         <h1 className="text-[32px]  text-[#ffffff] text-center">
-          Mike Tieson
+         {user.name}
         </h1>
         <span className="text-[16px] text-[#BAC5C8]  flex justify-center">
-          miketieso@gmail.com
+        {user.email}
         </span>
       </div>
       <div className=" flex justify-between gap-3 mt-2">

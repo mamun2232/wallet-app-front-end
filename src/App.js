@@ -20,6 +20,10 @@ import Support from "./components/Setting/Support";
 import Shop from "./components/Shop/Shop";
 import Wallet from "./components/Wallet/Wallet";
 
+import { ToastContainer } from "react-toastify";
+import RequreAuth from "./components/Authenticaton/RequreAuth";
+import AddLaylityCard from "./components/Home/AddLaylityCard";
+
 function App() {
   return (
     <div className=" bg-[#1E1E1E] w-[100vw] h-screen ">
@@ -27,23 +31,120 @@ function App() {
         <Route path="/" element={<Login />}></Route>
         <Route path="/register" element={<Registion />}></Route>
         <Route path="/complectProfile" element={<ComplectProfile />}></Route>
-        <Route path="/home" element={<Home />}></Route>
+        <Route
+          path="/home"
+          element={
+            <RequreAuth>
+              <Home />
+            </RequreAuth>
+          }
+        ></Route>
+        <Route
+          path="/loyaltyCard"
+          element={
+            <RequreAuth>
+              <AddLaylityCard/>
+            </RequreAuth>
+          }
+        ></Route>
         <Route path="/loyaltyCard" element={<Scan />}></Route>
-        <Route path="/scanQr" element={<ScanQrCode/>}></Route>
-        <Route path="/payment" element={<Payment/>}></Route>
-        <Route path="/PaymentSuccess" element={<PaymentSuccess/>}></Route>
-        <Route path="/challange" element={<Challange/>}></Route>
-        <Route path="/profile" element={<Profile/>}>
-        <Route index element={<Status />} />
-        <Route path="/profile/achivemment" element={<Achevment />} />
-        <Route path="/profile/active" element={<Active />} />
+        <Route path="/scanQr" element={<ScanQrCode />}></Route>
+        <Route path="/payment" element={<Payment />}></Route>
+        <Route path="/PaymentSuccess" element={<PaymentSuccess />}></Route>
+        <Route
+          path="/challange"
+          element={
+            <RequreAuth>
+              <Challange />
+            </RequreAuth>
+          }
+        ></Route>
+        <Route
+          path="/profile"
+          element={
+            <RequreAuth>
+              <Profile />
+            </RequreAuth>
+          }
+        >
+          <Route
+            index
+            element={
+              <RequreAuth>
+                <Status />
+              </RequreAuth>
+            }
+          />
+          <Route
+            path="/profile/achivemment"
+            element={
+              <RequreAuth>
+                <Achevment />
+              </RequreAuth>
+            }
+          />
+          <Route
+            path="/profile/active"
+            element={
+              <RequreAuth>
+                <Active />
+              </RequreAuth>
+            }
+          />
         </Route>
-        <Route path="/setting" element={<Setting/>}/>
-        <Route path="/faq" element={<Faq/>}/>
-        <Route path="/support" element={<Support/>}/>
-        <Route path="/shop" element={<Shop/>}/>
-        <Route path="/wallet" element={<Wallet/>}/>
+        <Route
+          path="/setting"
+          element={
+            <RequreAuth>
+              <Setting />
+            </RequreAuth>
+          }
+        />
+        <Route
+          path="/faq"
+          element={
+            <RequreAuth>
+              <Faq />
+            </RequreAuth>
+          }
+        />
+        <Route
+          path="/support"
+          element={
+            <RequreAuth>
+              <Support />
+            </RequreAuth>
+          }
+        />
+        <Route
+          path="/shop"
+          element={
+            <RequreAuth>
+              <Shop />
+            </RequreAuth>
+          }
+        />
+        <Route
+          path="/wallet"
+          element={
+            <RequreAuth>
+              <Wallet />
+            </RequreAuth>
+          }
+        />
       </Routes>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
   );
 }

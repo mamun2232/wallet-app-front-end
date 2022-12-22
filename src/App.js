@@ -48,7 +48,7 @@ function App() {
           }
         ></Route>
         <Route path="/loyaltyCard" element={<Scan />}></Route>
-        <Route path="/scanQr" element={<ScanQrCode />}></Route>
+        <Route path="/loyaltyCardDetails/:id" element={<ScanQrCode />}></Route>
         <Route path="/payment" element={<Payment />}></Route>
         <Route path="/PaymentSuccess" element={<PaymentSuccess />}></Route>
         <Route

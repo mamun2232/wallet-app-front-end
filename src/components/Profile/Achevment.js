@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 const Achevment = () => {
   return (
     <div className="mt-5">
-      <div className="  bg-[#ffffff] p-4 w-[351px] h-[116px] rounded-[24px] mt-3">
+      <div className="  bg-[#ffffff] p-4 w-[325px] h-[116px] rounded-[24px] mt-3">
         <div className="flex gap-3  ">
           <div className="bg-[#000000] w-[30px] h-[30px] rounded-lg flex justify-center items-center mt-3">
             <span className="text-white ">

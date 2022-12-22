@@ -40,25 +40,26 @@ const ProfileSection = () => {
       </div>
 
       <div>
-        <div className="mt-3 flex justify-center">
-          <div className=" rounded-full  bg-gray-700 w-[124px] h-[124px] relative ">
+        <div className="mt-3 flex justify-center h-[124px] relative">
+          <div className=" rounded-full  bg-gray-700 w-[124px] h-[124px] ">
             <div className=" flex justify-center pt-6">
               <span className="text-6xl text-white ">
                 <CgProfile />
               </span>
             </div>
           </div>
-        </div>
-        <div className="w-[51px] h-[51px] bg-gradient-to-b  from-[#C52410] to-[#E6550A] flex justify-center items-center rounded-full absolute top-[140px]  right-[110px]">
+          <div className="w-[51px] h-[51px] bg-gradient-to-b  from-[#C52410] to-[#E6550A] flex justify-center items-center rounded-full absolute top-20 lg:left-[100vh]  right-[90px]">
           <span className="text-2xl text-white">
             <AiFillCamera />
           </span>
         </div>
+        </div>
+       
         <h1 className="text-[32px]  text-[#ffffff] text-center">
-         {user.name}
+         {user?.name}
         </h1>
         <span className="text-[16px] text-[#BAC5C8]  flex justify-center">
-        {user.email}
+        {user?.email}
         </span>
       </div>
       <div className=" flex justify-between gap-3 mt-2">
